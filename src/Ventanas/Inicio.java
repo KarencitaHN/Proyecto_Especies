@@ -315,8 +315,8 @@ try {
     }//GEN-LAST:event_btnRegistroActionPerformed
 
     private void btnvermapaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnvermapaActionPerformed
-    Informacion informacion = new Informacion ();
-    informacion.setVisible(true);                
+    MapaGeografico mapa = new MapaGeografico ();
+    mapa.setVisible(true);                
     this.dispose();
     }//GEN-LAST:event_btnvermapaActionPerformed
 
