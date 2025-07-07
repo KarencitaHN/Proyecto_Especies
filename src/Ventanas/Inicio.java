@@ -45,7 +45,7 @@ public class Inicio extends javax.swing.JFrame {
         passcontraseña = new javax.swing.JPasswordField();
         btningresar = new javax.swing.JButton();
         btnRegistro = new javax.swing.JButton();
-        btndetalles = new javax.swing.JButton();
+        btnvermapa = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         btninformacion1 = new javax.swing.JButton();
 
@@ -128,14 +128,14 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        btndetalles.setBackground(new java.awt.Color(0, 102, 204));
-        btndetalles.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        btndetalles.setForeground(new java.awt.Color(255, 255, 255));
-        btndetalles.setText("Detalles");
-        btndetalles.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btndetalles.addActionListener(new java.awt.event.ActionListener() {
+        btnvermapa.setBackground(new java.awt.Color(0, 102, 204));
+        btnvermapa.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btnvermapa.setForeground(new java.awt.Color(255, 255, 255));
+        btnvermapa.setText("Ver Mapa");
+        btnvermapa.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnvermapa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btndetallesActionPerformed(evt);
+                btnvermapaActionPerformed(evt);
             }
         });
 
@@ -165,7 +165,7 @@ public class Inicio extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btningresar, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(111, 111, 111)
-                        .addComponent(btndetalles, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnvermapa, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(17, 17, 17))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,7 +236,7 @@ public class Inicio extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btndetalles, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnvermapa, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btninformacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(20, 20, 20))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -314,11 +314,11 @@ try {
     this.dispose();        
     }//GEN-LAST:event_btnRegistroActionPerformed
 
-    private void btndetallesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndetallesActionPerformed
+    private void btnvermapaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnvermapaActionPerformed
     Informacion informacion = new Informacion ();
     informacion.setVisible(true);                
     this.dispose();
-    }//GEN-LAST:event_btndetallesActionPerformed
+    }//GEN-LAST:event_btnvermapaActionPerformed
 
     private void btninformacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btninformacion1ActionPerformed
     Informacion informacion = new Informacion ();
@@ -371,9 +371,9 @@ try {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRegistro;
-    private javax.swing.JButton btndetalles;
     private javax.swing.JButton btninformacion1;
     private javax.swing.JButton btningresar;
+    private javax.swing.JButton btnvermapa;
     private javax.swing.JComboBox<String> comboxrol;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

@@ -4,6 +4,19 @@
  */
 package Ventanas;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+import javax.swing.JOptionPane;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.view.JasperViewer;
+
 /**
  *
  * @author Alumno
@@ -33,7 +46,7 @@ public class Configuracion extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         btngestiondeusuarios = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
-        btnInicio1 = new javax.swing.JButton();
+        btnverregistrousuarios = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JSeparator();
         btnInicio2 = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JSeparator();
@@ -89,18 +102,18 @@ public class Configuracion extends javax.swing.JFrame {
             }
         });
 
-        btnInicio1.setBackground(new java.awt.Color(0, 102, 153));
-        btnInicio1.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        btnInicio1.setForeground(new java.awt.Color(255, 255, 255));
-        btnInicio1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/grafico-de-lineas.png"))); // NOI18N
-        btnInicio1.setText("VER REGISTRO DE USUARIOS ");
-        btnInicio1.setBorder(null);
-        btnInicio1.setBorderPainted(false);
-        btnInicio1.setContentAreaFilled(false);
-        btnInicio1.setFocusPainted(false);
-        btnInicio1.addActionListener(new java.awt.event.ActionListener() {
+        btnverregistrousuarios.setBackground(new java.awt.Color(0, 102, 153));
+        btnverregistrousuarios.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btnverregistrousuarios.setForeground(new java.awt.Color(255, 255, 255));
+        btnverregistrousuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/grafico-de-lineas.png"))); // NOI18N
+        btnverregistrousuarios.setText("VER REGISTRO DE USUARIOS ");
+        btnverregistrousuarios.setBorder(null);
+        btnverregistrousuarios.setBorderPainted(false);
+        btnverregistrousuarios.setContentAreaFilled(false);
+        btnverregistrousuarios.setFocusPainted(false);
+        btnverregistrousuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInicio1ActionPerformed(evt);
+                btnverregistrousuariosActionPerformed(evt);
             }
         });
 
@@ -162,7 +175,7 @@ public class Configuracion extends javax.swing.JFrame {
                                 .addComponent(jLabel3))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(91, 91, 91)
-                                .addComponent(btnInicio1))
+                                .addComponent(btnverregistrousuarios))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(92, 92, 92)
                                 .addComponent(btnInicio3))
@@ -191,7 +204,7 @@ public class Configuracion extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnInicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnverregistrousuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -231,9 +244,38 @@ public class Configuracion extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btngestiondeusuariosActionPerformed
 
-    private void btnInicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicio1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnInicio1ActionPerformed
+    private void btnverregistrousuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnverregistrousuariosActionPerformed
+        try {
+        // Conexión directa a la base de datos
+        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/gestion_mar", "root", "12345678");
+
+        // Ruta corregida al archivo .jrxml (ajústala si cambia)
+        String ruta = "C:\\Users\\Alumno\\JaspersoftWorkspace\\MyReports/VerUsuarios.jrxml";
+
+        // Compilar el archivo .jrxml
+        JasperReport reporte = JasperCompileManager.compileReport(ruta);
+
+        // Enviar parámetros vacíos si no se usan
+        Map<String, Object> parametros = new HashMap<>();
+
+        // Llenar el reporte con la base de datos
+        JasperPrint jasperPrint = JasperFillManager.fillReport(reporte, parametros, conexion);
+
+        // Mostrar el visor del reporte
+        JasperViewer viewer = new JasperViewer(jasperPrint, false);
+        viewer.setTitle("Reporte de especies registradas");
+        viewer.setVisible(true);
+
+        conexion.close();
+
+    } catch (JRException e) {
+        JOptionPane.showMessageDialog(null, "Error al generar el reporte: " + e.getMessage());
+        e.printStackTrace();
+    } catch (SQLException e){
+        JOptionPane.showMessageDialog(null, "Error SQL: " + e.getMessage());
+        e.printStackTrace();
+    }                   
+    }//GEN-LAST:event_btnverregistrousuariosActionPerformed
 
     private void btnInicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicio2ActionPerformed
         // TODO add your handling code here:
@@ -280,10 +322,10 @@ public class Configuracion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
-    private javax.swing.JButton btnInicio1;
     private javax.swing.JButton btnInicio2;
     private javax.swing.JButton btnInicio3;
     private javax.swing.JButton btngestiondeusuarios;
+    private javax.swing.JButton btnverregistrousuarios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

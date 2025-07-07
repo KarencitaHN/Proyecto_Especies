@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mapa de Especies Marinas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Estilos de Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center;">Ubicaciones de Especies Marinas</h2>
+  <div id="map"></div>
+
+  <!-- Scripts de Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([15, -85], 3); // Centro aproximado
+
+    // Capa base del mapa
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Marcadores
+    var marcadores = [
+      { nombre: "Tortuga de manglar", lat: 14.6, lon: -87.0 },
+      { nombre: "Atún blanco", lat: 12.5, lon: -82.8 },
+      { nombre: "Pargo rojo", lat: 14.8, lon: -84.2 },
+      { nombre: "Calamar gigante", lat: -4.0, lon: -81.0 },
+      { nombre: "Sepia común", lat: 36.0, lon: 5.0 },
+      { nombre: "Serpiente amarilla marina", lat: -10.0, lon: 142.0 },
+      { nombre: "Pulpo común", lat: 35.0, lon: -6.0 },
+      { nombre: "Tortuga laud", lat: 10.0, lon: -75.0 },
+      { nombre: "Tiburón blanco", lat: 32.0, lon: -118.0 },
+      { nombre: "Pingüino de Humboldt", lat: -30.0, lon: -71.0 },
+      { nombre: "Delfín rosado del Amazonas", lat: -3.0, lon: -60.0 },
+      { nombre: "Cocodrilo americano", lat: 19.0, lon: -77.0 },
+      { nombre: "Atún rojo del Atlántico", lat: 38.0, lon: -28.0 },
+      { nombre: "Caballito de mar", lat: 6.0, lon: 122.0 },
+      { nombre: "Tortuga verde", lat: 1.5, lon: 103.0 },
+      { nombre: "Ballena azul", lat: -45.0, lon: -60.0 },
+      { nombre: "Delfín común", lat: 20.0, lon: -75.0 },
+      { nombre: "Orca", lat: 55.0, lon: -150.0 },
+      { nombre: "Pingüino menor", lat: -40.0, lon: 147.0 },
+      { nombre: "Chelonia agassizii", lat: 1.0, lon: -90.0 },
+      { nombre: "Hydrophis platurus", lat: -8.0, lon: 115.0 }
+    ];
+
+    marcadores.forEach(function(especie) {
+      L.marker([especie.lat, especie.lon])
+        .addTo(map)
+        .bindPopup(especie.nombre);
+    });
+  </script>
+</body>
+</html>
