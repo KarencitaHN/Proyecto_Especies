@@ -48,7 +48,7 @@ public class Configuracion extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         btnverregistrousuarios = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JSeparator();
-        btnInicio2 = new javax.swing.JButton();
+        btncambiaridioma = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JSeparator();
         btnInicio3 = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JSeparator();
@@ -117,18 +117,18 @@ public class Configuracion extends javax.swing.JFrame {
             }
         });
 
-        btnInicio2.setBackground(new java.awt.Color(0, 102, 153));
-        btnInicio2.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        btnInicio2.setForeground(new java.awt.Color(255, 255, 255));
-        btnInicio2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/honduras.png"))); // NOI18N
-        btnInicio2.setText("IDIOMA DEL SISTEMA");
-        btnInicio2.setBorder(null);
-        btnInicio2.setBorderPainted(false);
-        btnInicio2.setContentAreaFilled(false);
-        btnInicio2.setFocusPainted(false);
-        btnInicio2.addActionListener(new java.awt.event.ActionListener() {
+        btncambiaridioma.setBackground(new java.awt.Color(0, 102, 153));
+        btncambiaridioma.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btncambiaridioma.setForeground(new java.awt.Color(255, 255, 255));
+        btncambiaridioma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/honduras.png"))); // NOI18N
+        btncambiaridioma.setText("IDIOMA DEL SISTEMA");
+        btncambiaridioma.setBorder(null);
+        btncambiaridioma.setBorderPainted(false);
+        btncambiaridioma.setContentAreaFilled(false);
+        btncambiaridioma.setFocusPainted(false);
+        btncambiaridioma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInicio2ActionPerformed(evt);
+                btncambiaridiomaActionPerformed(evt);
             }
         });
 
@@ -181,7 +181,7 @@ public class Configuracion extends javax.swing.JFrame {
                                 .addComponent(btnInicio3))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(83, 83, 83)
-                                .addComponent(btnInicio2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btncambiaridioma, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(91, 91, 91)
                                 .addComponent(btngestiondeusuarios)))
@@ -212,7 +212,7 @@ public class Configuracion extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnInicio2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btncambiaridioma, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -277,9 +277,11 @@ public class Configuracion extends javax.swing.JFrame {
     }                   
     }//GEN-LAST:event_btnverregistrousuariosActionPerformed
 
-    private void btnInicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicio2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnInicio2ActionPerformed
+    private void btncambiaridiomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncambiaridiomaActionPerformed
+        Idiomas idi = new Idiomas();
+        idi.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btncambiaridiomaActionPerformed
 
     private void btnInicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicio3ActionPerformed
         // TODO add your handling code here:
@@ -322,8 +324,8 @@ public class Configuracion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
-    private javax.swing.JButton btnInicio2;
     private javax.swing.JButton btnInicio3;
+    private javax.swing.JButton btncambiaridioma;
     private javax.swing.JButton btngestiondeusuarios;
     private javax.swing.JButton btnverregistrousuarios;
     private javax.swing.JLabel jLabel1;
