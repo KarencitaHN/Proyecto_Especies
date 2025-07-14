@@ -50,6 +50,7 @@ public class MapaGeografico extends javax.swing.JFrame {
         btnverubicaciones = new javax.swing.JButton();
         btnmiubicacion = new javax.swing.JButton();
         btninformacion3 = new javax.swing.JButton();
+        btngaleria = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
@@ -140,6 +141,18 @@ public class MapaGeografico extends javax.swing.JFrame {
             }
         });
 
+        btngaleria.setBackground(new java.awt.Color(0, 102, 204));
+        btngaleria.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btngaleria.setForeground(new java.awt.Color(255, 255, 255));
+        btngaleria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/image-galery (1).png"))); // NOI18N
+        btngaleria.setText("Galeria");
+        btngaleria.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btngaleria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btngaleriaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -158,7 +171,8 @@ public class MapaGeografico extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnverubicaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnmiubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btninformacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btninformacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btngaleria, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(84, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
@@ -183,7 +197,9 @@ public class MapaGeografico extends javax.swing.JFrame {
                         .addComponent(btnmiubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(68, 68, 68)
                         .addComponent(btninformacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(198, Short.MAX_VALUE))))
+                        .addGap(68, 68, 68)
+                        .addComponent(btngaleria, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(89, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -239,6 +255,12 @@ public class MapaGeografico extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btninformacion3ActionPerformed
 
+    private void btngaleriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngaleriaActionPerformed
+        Galeria galeria = new Galeria();
+        galeria.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btngaleriaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -277,6 +299,7 @@ public class MapaGeografico extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
+    private javax.swing.JButton btngaleria;
     private javax.swing.JButton btninformacion3;
     private javax.swing.JButton btnmiubicacion;
     private javax.swing.JButton btnverubicaciones;

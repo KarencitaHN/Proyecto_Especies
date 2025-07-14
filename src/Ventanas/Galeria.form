@@ -111,18 +111,41 @@
                           <Component id="btnAtras" min="-2" pref="91" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="lblmapamundial" min="-2" pref="739" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnverubicaciones" min="-2" pref="165" max="-2" attributes="0"/>
-                              <Component id="btnmiubicacion" min="-2" pref="165" max="-2" attributes="0"/>
-                              <Component id="btninformacion3" min="-2" pref="165" max="-2" attributes="0"/>
-                              <Component id="btngaleria" min="-2" pref="165" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="btngaleria" min="-2" pref="82" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                                      <Component id="lblmapamundial" min="-2" pref="255" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="lblmapamundial3" min="-2" pref="255" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane2" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="120" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="lblmapamundial1" min="-2" pref="255" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane3" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
-                          <EmptySpace pref="84" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -142,21 +165,29 @@
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="lblmapamundial" pref="0" max="32767" attributes="0"/>
-                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="btnverubicaciones" min="-2" pref="41" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                          <Component id="btnmiubicacion" min="-2" pref="41" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                          <Component id="btninformacion3" min="-2" pref="41" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                          <Component id="btngaleria" min="-2" pref="41" max="-2" attributes="0"/>
-                          <EmptySpace pref="89" max="32767" attributes="0"/>
+                      <Component id="lblmapamundial" alignment="0" min="-2" pref="157" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="lblmapamundial3" alignment="0" min="-2" pref="157" max="-2" attributes="0"/>
+                          <Component id="lblmapamundial1" alignment="3" min="-2" pref="157" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel3" min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" pref="53" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane2" pref="159" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane3" min="-2" pref="159" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="32" max="32767" attributes="0"/>
+                  <Component id="btngaleria" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -171,9 +202,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Recursos/global (1).png"/>
+              <Image iconType="3" name="/Recursos/image-galery.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="MAPA GEOGRAFICO"/>
+            <Property name="text" type="java.lang.String" value="GALERIA"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnAtras">
@@ -205,7 +236,7 @@
         <Component class="javax.swing.JLabel" name="lblmapamundial">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Recursos/Mapa Mundial3.png"/>
+              <Image iconType="3" name="/Recursos/AAA005.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -217,81 +248,117 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnverubicaciones">
+        <Component class="javax.swing.JLabel" name="lblmapamundial1">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="66" red="0" type="rgb"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Recursos/A02.png"/>
             </Property>
+            <Property name="text" type="java.lang.String" value="jLabel1"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder thickness="4">
+                  <Color PropertyName="color" blue="cc" green="33" red="0" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblmapamundial3">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Recursos/A01.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel1"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder thickness="4">
+                  <Color PropertyName="color" blue="cc" green="33" red="0" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI Black" size="14" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Recursos/mapa.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Mapa Especies"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-                <BevelBorder/>
-              </Border>
-            </Property>
+            <Property name="text" type="java.lang.String" value="Calamar Gigante"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnverubicacionesActionPerformed"/>
-          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnmiubicacion">
+        <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="66" red="0" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI Black" size="14" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Recursos/alfiler.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Mi Ubicacion"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-                <BevelBorder/>
-              </Border>
-            </Property>
+            <Property name="text" type="java.lang.String" value="Tiburon Blanco"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmiubicacionActionPerformed"/>
-          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btninformacion3">
+        <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="66" red="0" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI Black" size="14" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Recursos/lupa.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Explorar Zonas"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-                <BevelBorder/>
-              </Border>
-            </Property>
+            <Property name="text" type="java.lang.String" value="Atun Rojo"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btninformacion3ActionPerformed"/>
-          </Events>
         </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="El tiburon blanco es uno de los depredadores&#xa;mas grandes y conocidos del oceano.&#xa;&#xa;Puede alcanzar hasta 6 metros de longitud y &#xa;pesar mas de dos toneladas se caracteriza por&#xa;su cuerpo robusto, hocico conico, grandes&#xa;mandibulas con varias filas de dientes afilados &#xa;y un dorse grisaseo que se desvanece a blanco&#xa;en el vientre (coloracion contrasombreada que&#xa;lo ayuda a camuflarse).&#xa;&#xa;Habita en aguas templadas y costeras de todo el mundo, &#xa; incluyendo el oc&#xe9;ano Atl&#xe1;ntico, Pac&#xed;fico e&#xa; &#xcd;ndico. Es un cazador solitario que se alimenta &#xa;principalmente de peces, focas, &#xa;leones marinos y otras especies&#xa0;marinas.&#xa;"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea2">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="El calamar gigante es una de las criaturas m&#xe1;s &#xa;enigm&#xe1;ticas y fascinantes de los oc&#xe9;anos. &#xa;Puede alcanzar longitudes de hasta 13 metros &#xa;(hembras) y pesar m&#xe1;s de 250 kilogramos, lo que &#xa;lo convierte en uno de los invertebrados m&#xe1;s grandes &#xa;del planeta.&#xa;&#xa;Posee un cuerpo alargado, dos tent&#xe1;culos principales &#xa;extremadamente largos con ventosas dentadas, &#xa;y ocho brazos m&#xe1;s cortos. Tiene ojos enormes, &#xa;del tama&#xf1;o de pelotas de baloncesto, adaptados &#xa;para ver en la oscuridad de las profundidades marinas.&#xa;&#xa;Habita en aguas profundas de todos los oc&#xe9;anos, &#xa;generalmente por debajo de los 600 metros &#xa;de profundidad. Su comportamiento sigue siendo &#xa;poco conocido, ya que rara vez se observa vivo. &#xa;Se alimenta de peces y otros calamares, atrap&#xe1;ndolos &#xa;con sus tent&#xe1;culos."/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea3">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="El at&#xfa;n rojo es uno de los peces m&#xe1;s grandes, &#xa;veloces y valiosos del oc&#xe9;ano. Puede alcanzar &#xa;hasta 3 metros de longitud y pesar m&#xe1;s de 600 &#xa;kilogramos. Su cuerpo es aerodin&#xe1;mico y musculoso, &#xa;con un color azul met&#xe1;lico en el dorso y plateado &#xa;en el vientre, ideal para el camuflaje marino.&#xa;&#xa;Es un nadador incansable, capaz de cruzar el oc&#xe9;ano &#xa;Atl&#xe1;ntico en pocas semanas y alcanzar velocidades &#xa;superiores a 70 km/h. Se encuentra principalmente &#xa;en el Atl&#xe1;ntico Norte y el mar Mediterr&#xe1;neo, donde &#xa;realiza migraciones para reproducirse y alimentarse.&#xa;&#xa;El at&#xfa;n rojo se alimenta de peces m&#xe1;s peque&#xf1;os, &#xa;calamares y crust&#xe1;ceos. Su carne es muy apreciada &#xa;en la gastronom&#xed;a, especialmente en el sushi y &#xa;sashimi, lo que ha llevado a su sobrepesca cr&#xed;tica.&#xa;&#xa;Actualmente est&#xe1; en peligro de extinci&#xf3;n debido &#xa;a la pesca industrial, aunque se han implementado &#xa;esfuerzos internacionales para su recuperaci&#xf3;n &#xa;mediante cuotas de pesca y conservaci&#xf3;n."/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
         <Component class="javax.swing.JButton" name="btngaleria">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -303,10 +370,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Recursos/image-galery (1).png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Galeria"/>
+            <Property name="text" type="java.lang.String" value="Siguiente"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
                 <BevelBorder/>
