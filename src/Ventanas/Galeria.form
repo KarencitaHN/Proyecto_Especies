@@ -166,10 +166,8 @@
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lblmapamundial" alignment="0" min="-2" pref="157" max="-2" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="lblmapamundial3" alignment="0" min="-2" pref="157" max="-2" attributes="0"/>
-                          <Component id="lblmapamundial1" alignment="3" min="-2" pref="157" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="lblmapamundial3" alignment="0" min="-2" pref="157" max="-2" attributes="0"/>
+                      <Component id="lblmapamundial1" min="-2" pref="157" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -204,7 +202,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/image-galery.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="GALERIA"/>
+            <Property name="text" type="java.lang.String" value="GALER&#xcd;A"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnAtras">
@@ -297,7 +295,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Tiburon Blanco"/>
+            <Property name="text" type="java.lang.String" value="Tibur&#xf3;n Blanco "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
@@ -308,7 +306,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Atun Rojo"/>
+            <Property name="text" type="java.lang.String" value="At&#xfa;n Rojo"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">

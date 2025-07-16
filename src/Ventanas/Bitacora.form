@@ -105,7 +105,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="710" max="32767" attributes="0"/>
+                  <EmptySpace pref="676" max="32767" attributes="0"/>
                   <Component id="btnAtras" min="-2" pref="91" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               </Group>
@@ -165,26 +165,33 @@
                           <Component id="btnInicio" min="-2" pref="44" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel3" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
-                      <Component id="txtRol" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnverubicaciones" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel3" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                              <Component id="txtRol" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                          <Component id="btnverubicaciones" min="-2" pref="41" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel5" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
-                                  <Component id="txtAccion" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="btngaleria" alignment="1" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel5" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                              <Component id="txtAccion" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jScrollPane1" min="-2" pref="241" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="btnGuardar" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="btnGuardar" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                          <Component id="btngaleria" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
               </Group>
@@ -201,9 +208,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Recursos/image-galery.png"/>
+              <Image iconType="3" name="/Recursos/memo (1).png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="GALERIA"/>
+            <Property name="text" type="java.lang.String" value="BIT&#xc1;CORA"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnAtras">
@@ -262,7 +269,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Accion : "/>
+            <Property name="text" type="java.lang.String" value="Acci&#xf3;n  : "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnGuardar">
@@ -414,7 +421,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/image-galery (1).png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="GALERIA"/>
+            <Property name="text" type="java.lang.String" value="GALER&#xcd;A"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
                 <BevelBorder/>

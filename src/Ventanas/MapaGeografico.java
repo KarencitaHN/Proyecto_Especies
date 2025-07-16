@@ -84,7 +84,7 @@ public class MapaGeografico extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/global (1).png"))); // NOI18N
-        jLabel2.setText("MAPA GEOGRAFICO");
+        jLabel2.setText("MAPA GEOGRÁFICO ");
 
         btnAtras.setBackground(new java.awt.Color(0, 102, 153));
         btnAtras.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
@@ -105,48 +105,56 @@ public class MapaGeografico extends javax.swing.JFrame {
         lblmapamundial.setText("jLabel1");
         lblmapamundial.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 204), 4));
 
-        btnverubicaciones.setBackground(new java.awt.Color(0, 102, 204));
+        btnverubicaciones.setBackground(new java.awt.Color(0, 51, 102));
         btnverubicaciones.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btnverubicaciones.setForeground(new java.awt.Color(255, 255, 255));
         btnverubicaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/mapa.png"))); // NOI18N
-        btnverubicaciones.setText("Mapa Especies");
+        btnverubicaciones.setText("MAPA ESPECIES");
         btnverubicaciones.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnverubicaciones.setBorderPainted(false);
+        btnverubicaciones.setContentAreaFilled(false);
         btnverubicaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnverubicacionesActionPerformed(evt);
             }
         });
 
-        btnmiubicacion.setBackground(new java.awt.Color(0, 102, 204));
+        btnmiubicacion.setBackground(new java.awt.Color(0, 51, 102));
         btnmiubicacion.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btnmiubicacion.setForeground(new java.awt.Color(255, 255, 255));
         btnmiubicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/alfiler.png"))); // NOI18N
-        btnmiubicacion.setText("Mi Ubicacion");
+        btnmiubicacion.setText("MI UBICACIÓN ");
         btnmiubicacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnmiubicacion.setBorderPainted(false);
+        btnmiubicacion.setContentAreaFilled(false);
         btnmiubicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnmiubicacionActionPerformed(evt);
             }
         });
 
-        btninformacion3.setBackground(new java.awt.Color(0, 102, 204));
+        btninformacion3.setBackground(new java.awt.Color(0, 51, 102));
         btninformacion3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btninformacion3.setForeground(new java.awt.Color(255, 255, 255));
         btninformacion3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/lupa.png"))); // NOI18N
-        btninformacion3.setText("Explorar Zonas");
+        btninformacion3.setText("EXPLORAR ZONAS ");
         btninformacion3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btninformacion3.setBorderPainted(false);
+        btninformacion3.setContentAreaFilled(false);
         btninformacion3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btninformacion3ActionPerformed(evt);
             }
         });
 
-        btngaleria.setBackground(new java.awt.Color(0, 102, 204));
+        btngaleria.setBackground(new java.awt.Color(0, 51, 102));
         btngaleria.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btngaleria.setForeground(new java.awt.Color(255, 255, 255));
         btngaleria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/image-galery (1).png"))); // NOI18N
-        btngaleria.setText("Galeria");
+        btngaleria.setText("GALERÍA");
         btngaleria.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btngaleria.setBorderPainted(false);
+        btngaleria.setContentAreaFilled(false);
         btngaleria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btngaleriaActionPerformed(evt);
@@ -171,9 +179,9 @@ public class MapaGeografico extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnverubicaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnmiubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btninformacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btngaleria, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(84, Short.MAX_VALUE))))
+                            .addComponent(btngaleria, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btninformacion3))
+                        .addContainerGap(74, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

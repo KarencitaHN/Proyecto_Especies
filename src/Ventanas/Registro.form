@@ -106,7 +106,7 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace pref="12" max="32767" attributes="0"/>
+                                  <EmptySpace pref="7" max="32767" attributes="0"/>
                                   <Component id="lblestado_conservacion" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="txtestado_conservacion" min="-2" pref="305" max="-2" attributes="0"/>
@@ -321,7 +321,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/escaneo-de-codigo-de-barras.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Codigo :"/>
+            <Property name="text" type="java.lang.String" value="C&#xf3;digo :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtnombre_cientifico">
@@ -349,7 +349,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/pez-payaso.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Nombre Comun :"/>
+            <Property name="text" type="java.lang.String" value="Nombre Com&#xfa;n :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblhabitat">
@@ -363,7 +363,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/estanque.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Habitat :"/>
+            <Property name="text" type="java.lang.String" value="H&#xe1;bitat  :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtnombre_comun">
@@ -405,7 +405,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/pez.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Poblacion Estimada : "/>
+            <Property name="text" type="java.lang.String" value="Poblaci&#xf3;n Estimada : "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtestado_conservacion">
@@ -433,7 +433,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/conservacion-del-agua.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Estado Conservacion : "/>
+            <Property name="text" type="java.lang.String" value="Estado Conservaci&#xf3;n  : "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtpoblacion_estimada">
@@ -511,7 +511,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/investigacion.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Nombre Cientifico : "/>
+            <Property name="text" type="java.lang.String" value="Nombre Cient&#xed;fico : "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtcodigo">
@@ -539,7 +539,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/cangrejo-de-rio.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Categoria : "/>
+            <Property name="text" type="java.lang.String" value="Categor&#xed;a  : "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtcategoria">

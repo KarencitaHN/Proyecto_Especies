@@ -125,7 +125,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/feliz.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Iniciar Sesion "/>
+            <Property name="text" type="java.lang.String" value="Iniciar sesi&#xf3;n"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>

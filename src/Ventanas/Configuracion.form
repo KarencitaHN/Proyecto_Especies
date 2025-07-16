@@ -182,7 +182,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/pagina-web (1).png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="CONFIGURACION"/>
+            <Property name="text" type="java.lang.String" value="CONFIGURACI&#xd3;N"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -193,7 +193,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Seleccione una opcion "/>
+            <Property name="text" type="java.lang.String" value="Seleccione una opci&#xf3;n :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btngestiondeusuarios">
@@ -210,7 +210,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/clave (1).png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="GESTION DE USUARIOS "/>
+            <Property name="text" type="java.lang.String" value="GESTI&#xd3;N DE USUARIOS"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>

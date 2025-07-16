@@ -95,7 +95,7 @@ public class Nuevo_Usuario extends javax.swing.JFrame {
         lblcorreo.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblcorreo.setForeground(new java.awt.Color(255, 255, 255));
         lblcorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/rec.png"))); // NOI18N
-        lblcorreo.setText("Correo electronico :");
+        lblcorreo.setText("Correo Electrónico");
 
         lblnombre.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblnombre.setForeground(new java.awt.Color(255, 255, 255));

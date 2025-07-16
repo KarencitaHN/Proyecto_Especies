@@ -286,7 +286,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Recursos/rec.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Correo electronico :"/>
+            <Property name="text" type="java.lang.String" value="Correo Electr&#xf3;nico"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblnombre">

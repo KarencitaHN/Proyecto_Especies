@@ -83,7 +83,7 @@ public class Estadisticas extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/encuesta (1).png"))); // NOI18N
-        jLabel2.setText("ESTADISTICAS");
+        jLabel2.setText("ESTADÍSTICAS");
 
         bntvergrafica.setBackground(new java.awt.Color(0, 51, 102));
         bntvergrafica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/grafico-circular.png"))); // NOI18N
@@ -123,7 +123,7 @@ public class Estadisticas extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("VER GRAFICA");
+        jLabel5.setText("VER GRÁFICOS");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

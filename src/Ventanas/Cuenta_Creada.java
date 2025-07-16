@@ -51,7 +51,7 @@ public class Cuenta_Creada extends javax.swing.JFrame {
         btnIniciarSesion.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnIniciarSesion.setForeground(new java.awt.Color(255, 255, 255));
         btnIniciarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/feliz.png"))); // NOI18N
-        btnIniciarSesion.setText("Iniciar Sesion ");
+        btnIniciarSesion.setText("Iniciar sesión");
         btnIniciarSesion.setBorderPainted(false);
         btnIniciarSesion.setContentAreaFilled(false);
         btnIniciarSesion.setFocusPainted(false);

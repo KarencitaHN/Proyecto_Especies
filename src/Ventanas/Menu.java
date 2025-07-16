@@ -80,7 +80,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/menu (3).png"))); // NOI18N
-        jLabel2.setText("MENU");
+        jLabel2.setText("MENÚ");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,7 +105,7 @@ public class Menu extends javax.swing.JFrame {
         btnEstadisticas.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btnEstadisticas.setForeground(new java.awt.Color(255, 255, 255));
         btnEstadisticas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/encuesta.png"))); // NOI18N
-        btnEstadisticas.setText("  ESTADISTICAS");
+        btnEstadisticas.setText("ESTADÍSTICAS ");
         btnEstadisticas.setBorder(null);
         btnEstadisticas.setBorderPainted(false);
         btnEstadisticas.setContentAreaFilled(false);
@@ -135,7 +135,7 @@ public class Menu extends javax.swing.JFrame {
         btnConfiguracion.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btnConfiguracion.setForeground(new java.awt.Color(255, 255, 255));
         btnConfiguracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/pagina-web.png"))); // NOI18N
-        btnConfiguracion.setText("  CONFIGURACION ");
+        btnConfiguracion.setText("CONFIGURACIÓN");
         btnConfiguracion.setBorder(null);
         btnConfiguracion.setBorderPainted(false);
         btnConfiguracion.setContentAreaFilled(false);

@@ -92,7 +92,7 @@ public class GaleriaAA2 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/image-galery.png"))); // NOI18N
-        jLabel2.setText("GALERIA");
+        jLabel2.setText("GALERÍA");
 
         btnAtras.setBackground(new java.awt.Color(0, 102, 153));
         btnAtras.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N

@@ -66,7 +66,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Gestion de Especies Marinas ");
+        jLabel4.setText("Gestión de Especies Marinas ");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/agregar-usuario (1).png"))); // NOI18N
 
@@ -106,7 +106,7 @@ public class Inicio extends javax.swing.JFrame {
         btningresar.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btningresar.setForeground(new java.awt.Color(255, 255, 255));
         btningresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/iniciar-sesion.png"))); // NOI18N
-        btningresar.setText("Ingresar");
+        btningresar.setText("INGRESAR");
         btningresar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btningresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,7 +131,7 @@ public class Inicio extends javax.swing.JFrame {
         btnvermapa.setBackground(new java.awt.Color(0, 102, 204));
         btnvermapa.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btnvermapa.setForeground(new java.awt.Color(255, 255, 255));
-        btnvermapa.setText("Ver Mapa");
+        btnvermapa.setText("VER MAPA");
         btnvermapa.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnvermapa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,7 +144,7 @@ public class Inicio extends javax.swing.JFrame {
         btninformacion1.setBackground(new java.awt.Color(0, 102, 204));
         btninformacion1.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btninformacion1.setForeground(new java.awt.Color(255, 255, 255));
-        btninformacion1.setText("Info");
+        btninformacion1.setText("INFO");
         btninformacion1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btninformacion1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,8 +163,8 @@ public class Inicio extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btninformacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btningresar, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(111, 111, 111)
+                        .addComponent(btningresar)
+                        .addGap(103, 103, 103)
                         .addComponent(btnvermapa, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(17, 17, 17))
                     .addGroup(jPanel1Layout.createSequentialGroup()

@@ -149,8 +149,8 @@ public class Tabla_Registros extends javax.swing.JFrame {
         btnBitacora.setBackground(new java.awt.Color(0, 102, 204));
         btnBitacora.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btnBitacora.setForeground(new java.awt.Color(255, 255, 255));
-        btnBitacora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/bloc.png"))); // NOI18N
-        btnBitacora.setText("BITACORA");
+        btnBitacora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/memo.png"))); // NOI18N
+        btnBitacora.setText("BITÁCORA");
         btnBitacora.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnBitacora.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +160,7 @@ public class Tabla_Registros extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Si usted realizo algun cambio o registro una nueva por favor llenar la bitacora, De lo contrario su usuario sera eliminado.");
+        jLabel1.setText("\"Si usted realizó algún cambio o registró una nueva, por favor, llene la bitácora. De lo contrario, su usuario será eliminado.\"");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

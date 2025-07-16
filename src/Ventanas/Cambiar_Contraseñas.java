@@ -136,7 +136,7 @@ public class Cambiar_Contraseñas extends javax.swing.JFrame {
         lblcorreo.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblcorreo.setForeground(new java.awt.Color(255, 255, 255));
         lblcorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/rec.png"))); // NOI18N
-        lblcorreo.setText("correo electronico :");
+        lblcorreo.setText("Correo Electrónico :");
 
         txtapellido.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 204), 3));
         txtapellido.addActionListener(new java.awt.event.ActionListener() {

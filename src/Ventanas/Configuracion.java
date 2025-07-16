@@ -81,17 +81,17 @@ public class Configuracion extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/pagina-web (1).png"))); // NOI18N
-        jLabel2.setText("CONFIGURACION");
+        jLabel2.setText("CONFIGURACIÓN");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Seleccione una opcion ");
+        jLabel3.setText("Seleccione una opción :");
 
         btngestiondeusuarios.setBackground(new java.awt.Color(0, 102, 153));
         btngestiondeusuarios.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btngestiondeusuarios.setForeground(new java.awt.Color(255, 255, 255));
         btngestiondeusuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/clave (1).png"))); // NOI18N
-        btngestiondeusuarios.setText("GESTION DE USUARIOS ");
+        btngestiondeusuarios.setText("GESTIÓN DE USUARIOS");
         btngestiondeusuarios.setBorder(null);
         btngestiondeusuarios.setBorderPainted(false);
         btngestiondeusuarios.setContentAreaFilled(false);

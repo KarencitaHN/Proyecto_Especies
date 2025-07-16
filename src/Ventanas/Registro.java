@@ -121,7 +121,7 @@ public class Registro extends javax.swing.JFrame {
         lblcodigo.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblcodigo.setForeground(new java.awt.Color(255, 255, 255));
         lblcodigo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/escaneo-de-codigo-de-barras.png"))); // NOI18N
-        lblcodigo.setText("Codigo :");
+        lblcodigo.setText("Código :");
 
         txtnombre_cientifico.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 204), 3));
         txtnombre_cientifico.addActionListener(new java.awt.event.ActionListener() {
@@ -133,12 +133,12 @@ public class Registro extends javax.swing.JFrame {
         lblnombre_comun.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblnombre_comun.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre_comun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/pez-payaso.png"))); // NOI18N
-        lblnombre_comun.setText("Nombre Comun :");
+        lblnombre_comun.setText("Nombre Común :");
 
         lblhabitat.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblhabitat.setForeground(new java.awt.Color(255, 255, 255));
         lblhabitat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/estanque.png"))); // NOI18N
-        lblhabitat.setText("Habitat :");
+        lblhabitat.setText("Hábitat  :");
 
         txtnombre_comun.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 204), 3));
         txtnombre_comun.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +157,7 @@ public class Registro extends javax.swing.JFrame {
         lblpoblacion_estimada.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblpoblacion_estimada.setForeground(new java.awt.Color(255, 255, 255));
         lblpoblacion_estimada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/pez.png"))); // NOI18N
-        lblpoblacion_estimada.setText("Poblacion Estimada : ");
+        lblpoblacion_estimada.setText("Población Estimada : ");
 
         txtestado_conservacion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 204), 3));
         txtestado_conservacion.addActionListener(new java.awt.event.ActionListener() {
@@ -169,7 +169,7 @@ public class Registro extends javax.swing.JFrame {
         lblestado_conservacion.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblestado_conservacion.setForeground(new java.awt.Color(255, 255, 255));
         lblestado_conservacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/conservacion-del-agua.png"))); // NOI18N
-        lblestado_conservacion.setText("Estado Conservacion : ");
+        lblestado_conservacion.setText("Estado Conservación  : ");
 
         txtpoblacion_estimada.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 204), 3));
         txtpoblacion_estimada.addActionListener(new java.awt.event.ActionListener() {
@@ -205,7 +205,7 @@ public class Registro extends javax.swing.JFrame {
         lblnombre_cientifico.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblnombre_cientifico.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre_cientifico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/investigacion.png"))); // NOI18N
-        lblnombre_cientifico.setText("Nombre Cientifico : ");
+        lblnombre_cientifico.setText("Nombre Científico : ");
 
         txtcodigo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 204), 3));
         txtcodigo.addActionListener(new java.awt.event.ActionListener() {
@@ -217,7 +217,7 @@ public class Registro extends javax.swing.JFrame {
         lblcategoria.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         lblcategoria.setForeground(new java.awt.Color(255, 255, 255));
         lblcategoria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/cangrejo-de-rio.png"))); // NOI18N
-        lblcategoria.setText("Categoria : ");
+        lblcategoria.setText("Categoría  : ");
 
         txtcategoria.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 204), 3));
         txtcategoria.addActionListener(new java.awt.event.ActionListener() {
@@ -306,7 +306,7 @@ public class Registro extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(txtpoblacion_estimada))))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                                 .addComponent(lblestado_conservacion)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txtestado_conservacion, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)))
