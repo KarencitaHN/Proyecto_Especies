@@ -131,7 +131,7 @@ public class Inicio extends javax.swing.JFrame {
         btnvermapa.setBackground(new java.awt.Color(0, 102, 204));
         btnvermapa.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         btnvermapa.setForeground(new java.awt.Color(255, 255, 255));
-        btnvermapa.setText("VER MAPA");
+        btnvermapa.setText("VER MAS");
         btnvermapa.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnvermapa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
