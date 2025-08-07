@@ -1,0 +1,470 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #003366;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* =========================
+  HEADER SUPERIOR
+========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002855;
+  padding: 20px 40px;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.logo-nombre img {
+  height: 70px;
+  margin-right: 15px;
+  background-color: transparent;
+}
+
+.logo-nombre h1 {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+/* =========================
+  SECCIONES GENERALES
+========================= */
+.seccion {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.seccion h2,
+.seccion h3 {
+  color: #002244;
+  margin-bottom: 20px;
+}
+
+.seccion p,
+.seccion ul {
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+/* =========================
+  CARRUSEL
+========================= */
+.carrusel {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carrusel-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carrusel-img.active {
+  opacity: 1;
+}
+
+/* =========================
+  GALERÍA DE ESPECIES
+========================= */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+  FORMULARIOS DE DONACIÓN
+========================= */
+label, select, input {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.formulario {
+  margin-top: 20px;
+}
+
+/* =========================
+  FOOTER
+========================= */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-columnas div h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #66ccff;
+}
+
+.footer-columnas ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-columnas li {
+  margin-bottom: 5px;
+}
+
+#contacto ul li {
+  text-align: justify;
+  text-indent: 30px;
+  margin-bottom: 5px;
+}
+/* =========================
+  INICIO CON CARRUSEL + NOTICIAS
+========================= */
+.inicio-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.inicio-contenedor .carrusel {
+  flex: 1 1 60%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.inicio-contenedor .carrusel-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.inicio-contenedor .carrusel-img.active {
+  opacity: 1;
+}
+
+.noticias {
+  flex: 1 1 35%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticias h3 {
+  margin-bottom: 15px;
+  color: #002855;
+  font-size: 20px;
+  text-align: left;
+}
+
+.noticia {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.noticia img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.noticia p {
+  font-size: 14px;
+  color: #003366;
+  text-align: left;
+  margin: 0;
+}
+
+/* =========================
+  SECCIONES EXTRAS DERECHA
+========================= */
+aside .seccion {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+aside .seccion h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #002855;
+}
+
+aside .seccion p,
+aside .seccion li,
+aside .seccion blockquote {
+  font-size: 14px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+aside .seccion ul {
+  padding-left: 20px;
+}
+
+aside blockquote {
+  font-style: italic;
+  background-color: #f0f8ff;
+  padding: 10px 15px;
+  border-left: 5px solid #0077cc;
+  border-radius: 5px;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* =========================
+  TEXTO JUSTIFICADO
+========================= */
+.texto-justificado {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* =========================
+  BLOQUE DE IMPACTO VISUAL
+========================= */
+.impacto-metrico {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.impacto-item {
+  text-align: center;
+  color: #002855;
+}
+
+.impacto-item h3 {
+  font-size: 28px;
+  color: #0077cc;
+  margin-bottom: 5px;
+}
+
+.impacto-item p {
+  font-size: 14px;
+}
+
+#objetivos {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+#objetivos li {
+  text-align: justify;
+  text-indent: 30px;
+  margin-bottom: 6px;
+}
+
+especies-protegidas {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style-position: inside;
+}
+
+.especies-protegidas li {
+  text-align: justify;
+  margin-bottom: 6px;
+}
+
+#especies {
+  margin-top: -80px;
+}
+
+.lema {
+  font-size: 14px;
+  color: #ffffff;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px; /* Aumenta el espacio aquí */
+}
+
+/* =========================
+  DISEÑO RESPONSIVO - MÓVILES
+========================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .seccion {
+    padding: 40px 15px;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario input,
+  .formulario select,
+  .formulario label {
+    width: 100%;
+  }
+
+  .footer-columnas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inicio-contenedor {
+    flex-direction: column;
+  }
+
+  .noticias {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .impacto-metrico {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .impacto-item h3 {
+    font-size: 24px;
+  }
+
+  .logo-nombre h1 {
+    font-size: 22px;
+  }
+
+  .lema {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  .carrusel {
+    height: auto;
+  }
+
+  .carrusel-img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .noticia {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .noticia img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}

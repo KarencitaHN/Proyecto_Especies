@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIO OCEAN - Conservación Marina</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+  <body style="background-image: url('img/FondoAzul.jpg'); background-size: cover; background-attachment: fixed; background-position: center;"></body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-nombre" style="display: flex; align-items: center; gap: 10px;">
+  <img src="img/Logo-BioOcean.png" alt="Logo BioOcean" style="height: 60px;">
+  <div style="display: flex; flex-direction: column;">
+    <h1 style="margin: 0; font-size: 28px; color: white;">BIO OCEAN</h1>
+    <p style="margin: 0; font-size: 14px; color: white; font-style: italic;">Where knowledge sails - Species registration system</p>
+  </div>
+</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#especies">Especies</a></li>
+        <li><a href="#donar">Donar</a></li>
+        <li><a href="#reportes">Reportes</a></li>
+        <li><a href="#estadisticas">Estadísticas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Principal: Carrusel + Noticias y Contenido -->
+  <section id="inicio" class="seccion">
+    <div style="display: flex; gap: 30px; flex-wrap: wrap; align-items: flex-start;">
+
+      <!-- LADO IZQUIERDO -->
+      <div style="flex: 2; min-width: 300px;">
+        <!-- Carrusel -->
+        <div class="carrusel">
+          <img src="img/carrusel1.jpg" class="carrusel-img active" alt="Imagen 1" />
+          <img src="img/carrusel2.jpg" class="carrusel-img" alt="Imagen 2" />
+          <img src="img/carrusel3.jpg" class="carrusel-img" alt="Imagen 3" />
+        </div>
+
+        <!-- BLOQUE DE IMPACTO RÁPIDO -->
+        <div class="impacto-metrico">
+          <div class="impacto-item">
+            <h3>+120</h3>
+            <p>Especies Registradas</p>
+          </div>
+          <div class="impacto-item">
+            <h3>+10</h3>
+            <p>Playas Protegidas</p>
+          </div>
+          <div class="impacto-item">
+            <h3>+300</h3>
+            <p>Voluntarios Activos</p>
+          </div>
+        </div>
+
+        <!-- Información BioOcean -->
+        <div class="contenido">
+          <h2>Protegiendo la Vida Marina</h2>
+          <p class="texto-justificado"><strong>BIO OCEAN</strong> es un sistema integral desarrollado para la gestión, monitoreo y conservación de especies marinas.</p>
+          <p class="texto-justificado">Su objetivo principal es proporcionar una herramienta digital que facilite el registro, análisis y seguimiento de datos ecológicos sobre la vida acuática, apoyando así la investigación científica, la sostenibilidad ambiental y la toma de decisiones responsables.</p>
+
+          <h3>Objetivos del sistema:</h3>
+          <ul id="objetivos">
+          <li>Centralizar información clave sobre especies marinas.</li>
+          <li>Facilitar el monitoreo de poblaciones y hábitats.</li>
+          <li>Apoyar proyectos de conservación con datos confiables.</li>
+          <li>Fomentar la educación ambiental.</li>
+          <li>Generar reportes e informes científicos.</li>
+          </ul>
+          <!-- NUEVA SECCIÓN PARA RELLENAR ESPACIO -->
+          <section class="seccion">
+          <h3>¿Por qué es importante proteger los océanos?</h3>
+          <p class="texto-justificado">
+          Los océanos cubren más del 70% de la superficie del planeta y son fundamentales para la vida en la Tierra. No solo regulan el clima, sino que también proporcionan oxígeno, alimentos y medios de vida a millones de personas. Conservarlos es vital para el equilibrio ecológico y el bienestar de las generaciones futuras.
+          </p>
+          </section>
+          <section class="seccion">
+          <h3>¿Qué especies estamos protegiendo?</h3>
+          <p class="texto-justificado">
+          En BioOcean nos enfocamos en el seguimiento y preservación de especies marinas que se encuentran en riesgo por causas como la pesca ilegal, la contaminación y la pérdida de hábitat. Algunas de las especies más sensibles actualmente monitoreadas incluyen:
+          </p>
+          <ul class="especies-protegidas">
+          <li>Tortuga carey</li>
+          <li>Manatí del Caribe</li>
+          <li>Atún rojo del Atlántico</li>
+          <li>Caballito de mar</li>
+          <li>Tiburón martillo</li>
+          </ul>
+          </section>
+        </div>
+      </div>
+
+      <!-- LADO DERECHO -->
+      <aside style="flex: 1; min-width: 260px;">
+        <!-- Noticias -->
+        <div class="noticias">
+          <h3>Noticias Recientes</h3>
+          <div class="noticia">
+            <img src="img/noticia1.jpg" alt="Liberación de tortugas" />
+            <p><strong>Liberación de tortugas</strong><br>Más de 200 crías liberadas en playas protegidas.</p>
+          </div>
+          <div class="noticia">
+            <img src="img/noticia2.jpg" alt="Nueva especie registrada" />
+            <p><strong>Nueva especie descubierta</strong><br>Investigadores identifican nueva especie marina.</p>
+          </div>
+          <div class="noticia">
+            <img src="img/noticia3.jpg" alt="Jornada de limpieza" />
+            <p><strong>Limpieza de arrecifes</strong><br>Voluntarios recolectaron más de 1 tonelada de desechos.</p>
+          </div>
+        </div>
+
+        <!-- Testimonios -->
+        <div class="seccion">
+          <h3>Testimonios</h3>
+          <blockquote>"Gracias a BioOcean, he aprendido sobre especies marinas en peligro." — Carla M.</blockquote>
+          <blockquote>"Donar a esta causa me hace sentir útil." — Luis G.</blockquote>
+        </div>
+
+        <!-- Datos curiosos -->
+        <div class="seccion">
+          <h3>Sabías que...</h3>
+          <p>🌊 El 70% del oxígeno proviene del océano.</p>
+          <p>🐙 Se han descubierto menos del 20% de las especies marinas.</p>
+        </div>
+
+        <!-- Eventos -->
+        <div class="seccion">
+          <h3>Próximos Eventos</h3>
+          <ul>
+            <li><strong>15 Ago:</strong> Charla UTH sobre conservación marina.</li>
+            <li><strong>20 Ago:</strong> Limpieza de playas en La Ceiba.</li>
+          </ul>
+        </div>
+
+        <!-- Mapa -->
+        <div class="seccion">
+          <h3>Zonas Marinas Protegidas</h3>
+          <img src="img/mapa-zonas.jpg" alt="Mapa marino" style="width: 100%; border-radius: 8px;">
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="seccion">
+          <h3>Síguenos</h3>
+          <p>Instagram: @bioocean_official</p>
+          <p>Facebook: BIO OCEAN – Conservación Marina</p>
+          <p>YouTube: Canal BioOcean</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Especies -->
+  <section id="especies" class="seccion">
+    <h2>Especies en Peligro</h2>
+    <div class="galeria">
+      <img src="img/tiburon.jpg" alt="Tiburón martillo" />
+      <img src="img/ballena.jpg" alt="Ballena azul" />
+      <img src="img/tortuga.jpeg" alt="Tortuga marina" />
+    </div>
+  </section>
+
+  <!-- Donar -->
+  <section id="donar" class="seccion">
+    <h2>Apóyanos con tu Donación</h2>
+    <label for="metodoPago">Selecciona un método de pago:</label>
+    <select id="metodoPago" onchange="mostrarFormulario()">
+      <option value="">-- Selecciona --</option>
+      <option value="paypal">PayPal</option>
+      <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+    </select>
+
+    <div id="formularioPaypal" class="formulario" style="display: none;">
+      <h3>Donar con PayPal</h3>
+      <input type="email" placeholder="Correo de PayPal" />
+      <button>Donar</button>
+    </div>
+
+    <div id="formularioTarjeta" class="formulario" style="display: none;">
+      <h3>Donar con Tarjeta</h3>
+      <input type="text" placeholder="Nombre en la tarjeta" />
+      <input type="text" placeholder="Número de tarjeta" />
+      <input type="text" placeholder="Fecha de expiración" />
+      <input type="text" placeholder="CVV" />
+      <button>Donar</button>
+    </div>
+  </section>
+
+  <!-- Reportes -->
+  <section id="reportes" class="seccion">
+    <h2>Reportes</h2>
+    <p>Consulta los reportes generados por el sistema:</p>
+    <ul>
+      <li><a href="#" target="_blank">Descargar Registro de Especies </a></li>
+      <li><a href="#" target="_blank">Descargar Gráfico de Conservación </a></li>
+    </ul>
+  </section>
+
+  <!-- Estadísticas -->
+  <section id="estadisticas" class="seccion">
+    <h2>Estadísticas</h2>
+    <p>Próximamente podrás visualizar  estadísticas con datos en tiempo real.</p>
+    <img src="img/grafico-simulacion.jpg" alt="Gráfico de especies" style="width: 300px; display: block; margin: 0 auto; border: 1px solid #003366;" />
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="seccion">
+    <h2>Contáctanos</h2>
+    <p>Redes sociales y medios de contacto:</p>
+    <ul>
+      <li>📞 WhatsApp: <a href="https://wa.me/50495731238" target="_blank">+504 9573-1238</a></li>
+      <li>📸 Instagram: <a href="https://instagram.com/bioocean_official" target="_blank">@bioocean_official</a></li>
+      <li>📘 Facebook: <a href="https://facebook.com" target="_blank">BIO OCEAN – Conservación Marina</a></li>
+      <li>▶️ YouTube: <a href="https://youtube.com" target="_blank">Canal BioOcean</a></li>
+      <li>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank">BioOcean LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columnas">
+      <div><h4>Conócenos</h4><ul><li>Sobre BioOcean</li><li>Quiénes somos</li></ul></div>
+      <div><h4>Servicios</h4><ul><li>Registro de especies</li><li>Reportes</li></ul></div>
+      <div><h4>Legal</h4><ul><li>Términos y Condiciones</li><li>Política de privacidad</li></ul></div>
+      <div><h4>Contacto</h4><ul><li>+504 9573-1238</li><li>bioocean@gmail.com</li></ul></div>
+    </div>
+    <p>© 2025 BioOcean - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
