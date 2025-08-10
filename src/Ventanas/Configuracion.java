@@ -50,7 +50,7 @@ public class Configuracion extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         btncambiaridioma = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JSeparator();
-        btnInicio3 = new javax.swing.JButton();
+        btnActivarDesactivarCuentas = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -132,18 +132,18 @@ public class Configuracion extends javax.swing.JFrame {
             }
         });
 
-        btnInicio3.setBackground(new java.awt.Color(0, 102, 153));
-        btnInicio3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        btnInicio3.setForeground(new java.awt.Color(255, 255, 255));
-        btnInicio3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/cambiar.png"))); // NOI18N
-        btnInicio3.setText("ACTIVAR O DESCATIVAR CUENTAS ");
-        btnInicio3.setBorder(null);
-        btnInicio3.setBorderPainted(false);
-        btnInicio3.setContentAreaFilled(false);
-        btnInicio3.setFocusPainted(false);
-        btnInicio3.addActionListener(new java.awt.event.ActionListener() {
+        btnActivarDesactivarCuentas.setBackground(new java.awt.Color(0, 102, 153));
+        btnActivarDesactivarCuentas.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btnActivarDesactivarCuentas.setForeground(new java.awt.Color(255, 255, 255));
+        btnActivarDesactivarCuentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/cambiar.png"))); // NOI18N
+        btnActivarDesactivarCuentas.setText("ACTIVAR O DESCATIVAR CUENTAS ");
+        btnActivarDesactivarCuentas.setBorder(null);
+        btnActivarDesactivarCuentas.setBorderPainted(false);
+        btnActivarDesactivarCuentas.setContentAreaFilled(false);
+        btnActivarDesactivarCuentas.setFocusPainted(false);
+        btnActivarDesactivarCuentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInicio3ActionPerformed(evt);
+                btnActivarDesactivarCuentasActionPerformed(evt);
             }
         });
 
@@ -178,7 +178,7 @@ public class Configuracion extends javax.swing.JFrame {
                                 .addComponent(btnverregistrousuarios))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(92, 92, 92)
-                                .addComponent(btnInicio3))
+                                .addComponent(btnActivarDesactivarCuentas))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(83, 83, 83)
                                 .addComponent(btncambiaridioma, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -208,7 +208,7 @@ public class Configuracion extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnInicio3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnActivarDesactivarCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -283,9 +283,78 @@ public class Configuracion extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btncambiaridiomaActionPerformed
 
-    private void btnInicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicio3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnInicio3ActionPerformed
+    private void btnActivarDesactivarCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActivarDesactivarCuentasActionPerformed
+        String username = javax.swing.JOptionPane.showInputDialog(
+            this, "Ingrese el NOMBRE DE USUARIO a (des)activar:", "Activar/Desactivar cuenta",
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (username == null || username.isBlank()) return;
+
+    try (java.sql.Connection cn = ConexionBD.conectar()) {
+        String sqlUser = "SELECT idusuarios, Nombre, Apellido FROM usuarios WHERE usuario = ? LIMIT 1";
+        int idUsuario = -1;
+        String nombreCompleto = "";
+
+        try (var ps = cn.prepareStatement(sqlUser)) {
+            ps.setString(1, username.trim());
+            try (var rs = ps.executeQuery()) {
+                if (!rs.next()) {
+                    javax.swing.JOptionPane.showMessageDialog(this,
+                            "No existe un usuario con nombre: " + username,
+                            "Aviso", javax.swing.JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+                idUsuario = rs.getInt("idusuarios");
+                nombreCompleto = rs.getString("Nombre") + " " + rs.getString("Apellido");
+            }
+        }
+
+        boolean desactivado;
+        String sqlCheck = "SELECT 1 FROM usuarios_desactivados WHERE idusuarios = ? LIMIT 1";
+        try (var ps = cn.prepareStatement(sqlCheck)) {
+            ps.setInt(1, idUsuario);
+            try (var rs = ps.executeQuery()) { desactivado = rs.next(); }
+        }
+
+        
+        String accion = desactivado ? "ACTIVAR" : "DESACTIVAR";
+        int conf = javax.swing.JOptionPane.showConfirmDialog(this,
+                "Usuario: " + username + " (" + nombreCompleto + ")\n\n¿Deseas " + accion + " esta cuenta?",
+                "Confirmar", javax.swing.JOptionPane.YES_NO_OPTION, javax.swing.JOptionPane.WARNING_MESSAGE);
+        if (conf != javax.swing.JOptionPane.YES_OPTION) return;
+
+        
+        boolean ok;
+        if (desactivado) {
+            String sqlOn = "DELETE FROM usuarios_desactivados WHERE idusuarios = ?";
+            try (var ps = cn.prepareStatement(sqlOn)) {
+                ps.setInt(1, idUsuario);
+                ok = ps.executeUpdate() > 0;
+            }
+        } else {
+            String motivo = javax.swing.JOptionPane.showInputDialog(this, "Motivo (opcional):", "Motivo",
+                    javax.swing.JOptionPane.QUESTION_MESSAGE);
+            String sqlOff = "INSERT INTO usuarios_desactivados (idusuarios, motivo) VALUES (?, ?) " +
+                            "ON DUPLICATE KEY UPDATE motivo = VALUES(motivo), desactivado_desde = CURRENT_TIMESTAMP";
+            try (var ps = cn.prepareStatement(sqlOff)) {
+                ps.setInt(1, idUsuario);
+                ps.setString(2, motivo == null ? "" : motivo.trim());
+                ok = ps.executeUpdate() > 0;
+            }
+        }
+
+        javax.swing.JOptionPane.showMessageDialog(this,
+                ok ? ("Cuenta " + (desactivado ? "ACTIVADA" : "DESACTIVADA") + " correctamente.")
+                   : "No se pudo completar la operación.",
+                ok ? "Éxito" : "Error",
+                ok ? javax.swing.JOptionPane.INFORMATION_MESSAGE : javax.swing.JOptionPane.ERROR_MESSAGE);
+
+    } catch (Exception e) {
+        e.printStackTrace();
+        javax.swing.JOptionPane.showMessageDialog(this, "Error:\n" + e.getMessage(),
+                "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_btnActivarDesactivarCuentasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -323,8 +392,8 @@ public class Configuracion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnActivarDesactivarCuentas;
     private javax.swing.JButton btnAtras;
-    private javax.swing.JButton btnInicio3;
     private javax.swing.JButton btncambiaridioma;
     private javax.swing.JButton btngestiondeusuarios;
     private javax.swing.JButton btnverregistrousuarios;

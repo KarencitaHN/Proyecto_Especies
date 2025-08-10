@@ -282,6 +282,12 @@ if (usuario.isEmpty() || contraseña.isEmpty() || rol.isEmpty()) {
     return;
 }
 
+    if (estaDesactivado(usuario, contraseña, rol)) {
+        JOptionPane.showMessageDialog(this, "Tu cuenta está DESACTIVADA. Contacta al administrador.",
+                "Acceso denegado", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
 try {
     Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/gestion_mar", "root", "12345678");
     String sql = "SELECT * FROM usuarios WHERE usuario = ? AND contraseña = ? AND rol = ?";
@@ -308,6 +314,28 @@ try {
 }                       
     }//GEN-LAST:event_btningresarActionPerformed
 
+    private boolean estaDesactivado(String usuario, String contraseña, String rol) {
+    String sql = """
+        SELECT 1
+        FROM usuarios u
+        JOIN usuarios_desactivados d ON d.idusuarios = u.idusuarios
+        WHERE u.usuario = ? AND u.Contraseña = ? AND u.Rol = ?
+        LIMIT 1
+    """;
+    try (Connection conn = ConexionBD.conectar();
+         PreparedStatement ps = conn.prepareStatement(sql)) {
+        ps.setString(1, usuario);
+        ps.setString(2, contraseña);
+        ps.setString(3, rol);
+        try (ResultSet rs = ps.executeQuery()) {
+            return rs.next(); // true si está desactivado
+        }
+    } catch (SQLException e) {
+        JOptionPane.showMessageDialog(this, "Error verificando estado:\n" + e.getMessage());
+        e.printStackTrace();
+        return false; // Si hay error, asumimos que no está desactivado
+    }
+}
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
     Nuevo_Usuario nuevousuario = new Nuevo_Usuario(); 
     nuevousuario.setVisible(true);                

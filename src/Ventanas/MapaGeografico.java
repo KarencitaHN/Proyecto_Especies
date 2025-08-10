@@ -49,7 +49,7 @@ public class MapaGeografico extends javax.swing.JFrame {
         lblmapamundial = new javax.swing.JLabel();
         btnverubicaciones = new javax.swing.JButton();
         btnmiubicacion = new javax.swing.JButton();
-        btninformacion3 = new javax.swing.JButton();
+        btnExplorarZonas = new javax.swing.JButton();
         btngaleria = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
@@ -133,17 +133,17 @@ public class MapaGeografico extends javax.swing.JFrame {
             }
         });
 
-        btninformacion3.setBackground(new java.awt.Color(0, 51, 102));
-        btninformacion3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        btninformacion3.setForeground(new java.awt.Color(255, 255, 255));
-        btninformacion3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/lupa.png"))); // NOI18N
-        btninformacion3.setText("EXPLORAR ZONAS ");
-        btninformacion3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btninformacion3.setBorderPainted(false);
-        btninformacion3.setContentAreaFilled(false);
-        btninformacion3.addActionListener(new java.awt.event.ActionListener() {
+        btnExplorarZonas.setBackground(new java.awt.Color(0, 51, 102));
+        btnExplorarZonas.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        btnExplorarZonas.setForeground(new java.awt.Color(255, 255, 255));
+        btnExplorarZonas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/lupa.png"))); // NOI18N
+        btnExplorarZonas.setText("EXPLORAR ZONAS ");
+        btnExplorarZonas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnExplorarZonas.setBorderPainted(false);
+        btnExplorarZonas.setContentAreaFilled(false);
+        btnExplorarZonas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btninformacion3ActionPerformed(evt);
+                btnExplorarZonasActionPerformed(evt);
             }
         });
 
@@ -180,7 +180,7 @@ public class MapaGeografico extends javax.swing.JFrame {
                             .addComponent(btnverubicaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnmiubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btngaleria, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btninformacion3))
+                            .addComponent(btnExplorarZonas))
                         .addContainerGap(74, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
@@ -204,7 +204,7 @@ public class MapaGeografico extends javax.swing.JFrame {
                         .addGap(75, 75, 75)
                         .addComponent(btnmiubicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(68, 68, 68)
-                        .addComponent(btninformacion3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnExplorarZonas, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(68, 68, 68)
                         .addComponent(btngaleria, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(89, Short.MAX_VALUE))))
@@ -259,9 +259,73 @@ public class MapaGeografico extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_btnmiubicacionActionPerformed
 
-    private void btninformacion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btninformacion3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btninformacion3ActionPerformed
+    private void btnExplorarZonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExplorarZonasActionPerformed
+        String[] opciones = {
+        "Zonas protegidas",
+        "Especies cercanas",
+        "Trazar ruta a una zona",
+        "Vista satelital"
+    };
+
+    int op = javax.swing.JOptionPane.showOptionDialog(
+            this,
+            "¿Qué deseas explorar?",
+            "Explorar zonas",
+            javax.swing.JOptionPane.DEFAULT_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE,
+            null,
+            opciones,
+            opciones[0]
+    );
+
+    try {
+        switch (op) {
+            case 0: { 
+                String lugar = javax.swing.JOptionPane.showInputDialog(this, "Ciudad o zona (ej. Tela, Atlántida):", "Zonas protegidas", javax.swing.JOptionPane.QUESTION_MESSAGE);
+                if (lugar != null && !lugar.isBlank()) {
+                    String url = "https://www.google.com/maps/search/áreas+protegidas+cerca+de+" + java.net.URLEncoder.encode(lugar, "UTF-8");
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+                }
+                break;
+            }
+            case 1: { 
+                String especie = javax.swing.JOptionPane.showInputDialog(this, "Especie/hábitat a buscar (ej. tortuga, manglar, coral):", "Especies cercanas", javax.swing.JOptionPane.QUESTION_MESSAGE);
+                String zona = javax.swing.JOptionPane.showInputDialog(this, "Ciudad o zona de referencia:", "Especies cercanas", javax.swing.JOptionPane.QUESTION_MESSAGE);
+                if (especie != null && zona != null && !especie.isBlank() && !zona.isBlank()) {
+                    String q = java.net.URLEncoder.encode(especie + " cerca de " + zona, "UTF-8");
+                    String url = "https://www.google.com/maps/search/" + q;
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+                }
+                break;
+            }
+            case 2: { 
+                String destino = javax.swing.JOptionPane.showInputDialog(this, "Destino (dirección o lat,lng):", "Trazar ruta", javax.swing.JOptionPane.QUESTION_MESSAGE);
+                if (destino != null && !destino.isBlank()) {
+                    String url = "https://www.google.com/maps/dir/?api=1&destination=" + java.net.URLEncoder.encode(destino, "UTF-8");
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+                }
+                break;
+            }
+            case 3: { 
+                String coords = javax.swing.JOptionPane.showInputDialog(this, "Coordenadas lat,lng (ej. 15.774,-86.566):", "Vista satelital", javax.swing.JOptionPane.QUESTION_MESSAGE);
+                if (coords != null && coords.matches("\\s*-?\\d+(\\.\\d+)?\\s*,\\s*-?\\d+(\\.\\d+)?\\s*")) {
+                    String[] p = coords.split(",");
+                    String lat = p[0].trim();
+                    String lng = p[1].trim();
+                    // 14z = zoom medio; &basemap=satellite usa capa satelital
+                    String url = "https://www.google.com/maps/@?api=1&map_action=map&center=" + lat + "," + lng + "&zoom=14&basemap=satellite";
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+                }
+                break;
+            }
+            default:
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+        javax.swing.JOptionPane.showMessageDialog(this, "No se pudo abrir el mapa: " + e.getMessage(),
+                "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+    }
+    }//GEN-LAST:event_btnExplorarZonasActionPerformed
 
     private void btngaleriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngaleriaActionPerformed
         Galeria galeria = new Galeria();
@@ -307,8 +371,8 @@ public class MapaGeografico extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
+    private javax.swing.JButton btnExplorarZonas;
     private javax.swing.JButton btngaleria;
-    private javax.swing.JButton btninformacion3;
     private javax.swing.JButton btnmiubicacion;
     private javax.swing.JButton btnverubicaciones;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;

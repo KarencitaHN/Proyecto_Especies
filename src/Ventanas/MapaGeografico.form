@@ -118,7 +118,7 @@
                               <Component id="btnverubicaciones" min="-2" pref="165" max="-2" attributes="0"/>
                               <Component id="btnmiubicacion" min="-2" pref="165" max="-2" attributes="0"/>
                               <Component id="btngaleria" min="-2" pref="165" max="-2" attributes="0"/>
-                              <Component id="btninformacion3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnExplorarZonas" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="74" max="32767" attributes="0"/>
                       </Group>
@@ -151,7 +151,7 @@
                           <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                           <Component id="btnmiubicacion" min="-2" pref="41" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                          <Component id="btninformacion3" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="btnExplorarZonas" min="-2" pref="41" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                           <Component id="btngaleria" min="-2" pref="41" max="-2" attributes="0"/>
                           <EmptySpace pref="89" max="32767" attributes="0"/>
@@ -271,7 +271,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmiubicacionActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btninformacion3">
+        <Component class="javax.swing.JButton" name="btnExplorarZonas">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="33" red="0" type="rgb"/>
@@ -295,7 +295,7 @@
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btninformacion3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExplorarZonasActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btngaleria">
