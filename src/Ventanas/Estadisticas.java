@@ -206,7 +206,7 @@ public class Estadisticas extends javax.swing.JFrame {
         Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/gestion_mar", "root", "12345678");
 
         // Ruta corregida al archivo .jrxml (ajústala si cambia)
-        String ruta = "C:\\Users\\Alumno\\JaspersoftWorkspace\\MyReports/VerRegistro.jrxml";
+        String ruta = "src\\MyReports/VerRegistro.jrxml";
 
         // Compilar el archivo .jrxml
         JasperReport reporte = JasperCompileManager.compileReport(ruta);
@@ -242,7 +242,7 @@ public class Estadisticas extends javax.swing.JFrame {
         Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/gestion_mar", "root", "12345678");
 
         // Ruta del jrxml
-        String ruta = "C:/Users/Alumno/JaspersoftWorkspace/MyReports/VerGraficas.jrxml";
+        String ruta = "src/MyReports/VerGraficas.jrxml";
 
         // Compilar reporte
         JasperReport reporte = JasperCompileManager.compileReport(ruta);
@@ -278,7 +278,7 @@ public class Estadisticas extends javax.swing.JFrame {
     Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/gestion_mar", "root", "12345678");
 
     // Ruta al archivo JRXML
-    String ruta = "C:\\Users\\Alumno\\JaspersoftWorkspace\\MyReports\\VerRegistro.jrxml";;
+    String ruta = "src\\MyReports\\VerRegistro.jrxml";;
 
     // Compilar el reporte
     JasperReport reporte = JasperCompileManager.compileReport(ruta);

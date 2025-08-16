@@ -1,0 +1,233 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="VerGraficas" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2e04cee7-fb80-45fa-8f7c-75886e378622">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Conexion_Gestion_Mar"/>
+	<dataset name="Dataset1" uuid="66d0a5c0-b021-4a04-86fc-efc5b80456fd">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Conexion_Gestion_Mar"/>
+		<query language="SQL"><![CDATA[SELECT categoria, COUNT(*) AS total
+FROM especies_marinas
+GROUP BY categoria
+ORDER BY categoria]]></query>
+		<field name="categoria" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="categoria"/>
+			<property name="com.jaspersoft.studio.field.label" value="categoria"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+		</field>
+		<field name="total" class="java.lang.Long">
+			<property name="com.jaspersoft.studio.field.name" value="total"/>
+			<property name="com.jaspersoft.studio.field.label" value="total"/>
+		</field>
+	</dataset>
+	<dataset name="Dataset2" uuid="592fa9ac-a4cc-4e2e-880b-21d19edaebee">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Conexion_Gestion_Mar"/>
+		<query language="SQL"><![CDATA[SELECT estado_conservacion, COUNT(*) AS total
+FROM especies_marinas
+GROUP BY estado_conservacion
+ORDER BY estado_conservacion]]></query>
+		<field name="estado_conservacion" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="estado_conservacion"/>
+			<property name="com.jaspersoft.studio.field.label" value="estado_conservacion"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+		</field>
+		<field name="total" class="java.lang.Long">
+			<property name="com.jaspersoft.studio.field.name" value="total"/>
+			<property name="com.jaspersoft.studio.field.label" value="total"/>
+		</field>
+	</dataset>
+	<dataset name="Dataset3" uuid="d122cd4d-7a5e-4bf5-b10a-e81cf4300bb9">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Conexion_Gestion_Mar"/>
+		<query language="SQL"><![CDATA[SELECT poblacion_estimada, COUNT(*) AS total
+FROM especies_marinas
+GROUP BY poblacion_estimada
+ORDER BY poblacion_estimada]]></query>
+		<field name="poblacion_estimada" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="poblacion_estimada"/>
+			<property name="com.jaspersoft.studio.field.label" value="poblacion_estimada"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+		</field>
+		<field name="total" class="java.lang.Long">
+			<property name="com.jaspersoft.studio.field.name" value="total"/>
+			<property name="com.jaspersoft.studio.field.label" value="total"/>
+		</field>
+	</dataset>
+	<query language="SQL"><![CDATA[SELECT * FROM especies_marinas;]]></query>
+	<field name="idespecies_marinas" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="idespecies_marinas"/>
+		<property name="com.jaspersoft.studio.field.label" value="idespecies_marinas"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="codigo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigo"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="categoria" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="categoria"/>
+		<property name="com.jaspersoft.studio.field.label" value="categoria"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="nombre_cientifico" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_cientifico"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_cientifico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="nombre_comun" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_comun"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_comun"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="habitat" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="habitat"/>
+		<property name="com.jaspersoft.studio.field.label" value="habitat"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="poblacion_estimada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="poblacion_estimada"/>
+		<property name="com.jaspersoft.studio.field.label" value="poblacion_estimada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="estado_conservacion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado_conservacion"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado_conservacion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<group name="idespecies_marinas">
+		<expression><![CDATA[$F{idespecies_marinas}]]></expression>
+	</group>
+	<group name="codigo">
+		<expression><![CDATA[$F{codigo}]]></expression>
+	</group>
+	<group name="categoria">
+		<expression><![CDATA[$F{categoria}]]></expression>
+	</group>
+	<group name="nombre_cientifico">
+		<expression><![CDATA[$F{nombre_cientifico}]]></expression>
+	</group>
+	<group name="nombre_comun">
+		<expression><![CDATA[$F{nombre_comun}]]></expression>
+	</group>
+	<group name="habitat">
+		<expression><![CDATA[$F{habitat}]]></expression>
+	</group>
+	<group name="poblacion_estimada">
+		<expression><![CDATA[$F{poblacion_estimada}]]></expression>
+	</group>
+	<group name="estado_conservacion">
+		<expression><![CDATA[$F{estado_conservacion}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="110" splitType="Stretch">
+		<element kind="image" uuid="072508f2-bf8b-4aae-b706-586a48ebcdc0" mode="Opaque" x="0" y="0" width="560" height="70" forecolor="#003366" backcolor="#003366">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/Logo BIO OCEANS.png"]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="e960e289-10c6-4932-ba6a-7ea45403342b" stretchType="ContainerHeight" x="240" y="10" width="120" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="18.0" bold="true">
+			<text><![CDATA[BIO OCEAN ]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="c8500ab1-01d2-4334-ba4e-9376129f41e8" stretchType="ContainerHeight" x="130" y="40" width="350" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="13.0" bold="true">
+			<text><![CDATA[REPORTE GENERAL DE ESPECIES MARINAS]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="c7ff75aa-bc10-4c4c-988b-3f102c36baa7" mode="Opaque" x="0" y="70" width="560" height="30" forecolor="#FFFCFC" backcolor="#D0D2DB" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Estadisticas actuales de las especies por categoria , estado y poblacion]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageHeader>
+	<columnHeader splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<columnFooter splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</columnFooter>
+	<pageFooter splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageFooter>
+	<summary height="650" splitType="Stretch">
+		<element kind="chart" chartType="area" uuid="cc976487-2cee-46ae-bc5b-f33e9739dddf" x="60" y="370" width="440" height="280" evaluationTime="Report">
+			<dataset kind="category" resetType="Report">
+				<datasetRun uuid="cfaa97ef-b98b-47e5-abb5-96597072ac32" subDataset="Dataset2">
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				</datasetRun>
+				<series>
+					<seriesExpression><![CDATA[$F{estado_conservacion}]]></seriesExpression>
+					<categoryExpression><![CDATA[$F{estado_conservacion}]]></categoryExpression>
+					<valueExpression><![CDATA[$F{total}]]></valueExpression>
+				</series>
+			</dataset>
+			<plot>
+				<seriesColor order="0" color="#217CEB"/>
+				<seriesColor order="1" color="#3BF5EB"/>
+				<seriesColor order="2" color="#89CFF0"/>
+				<seriesColor order="3" color="#236CB0"/>
+			</plot>
+		</element>
+		<element kind="chart" chartType="pie3D" uuid="0e9fcbd4-7bd6-4320-81fb-46611a50998f" x="290" y="30" width="285" height="290" evaluationTime="Report" linkType="None" linkTarget="Self">
+			<dataset kind="pie" resetType="Report">
+				<datasetRun uuid="119c1184-2682-4e8f-9d1c-a13cab3bb0a7" subDataset="Dataset1">
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				</datasetRun>
+				<series>
+					<keyExpression><![CDATA[$F{categoria}]]></keyExpression>
+					<valueExpression><![CDATA[$F{total}]]></valueExpression>
+				</series>
+			</dataset>
+			<plot>
+				<itemLabel color="#121010" backgroundColor="#E9EEF5">
+					<font fontName="Arial" fontSize="6.0"/>
+				</itemLabel>
+				<seriesColor order="0" color="#2816B5"/>
+				<seriesColor order="1" color="#AFFAF4"/>
+				<seriesColor order="2" color="#68A9ED"/>
+				<seriesColor order="3" color="#5BD8E3"/>
+				<seriesColor order="4" color="#1D8DF5"/>
+			</plot>
+		</element>
+		<element kind="chart" chartType="stackedBar3D" uuid="63de8976-faba-45ce-a207-4a18fe0a23be" x="0" y="30" width="270" height="290" evaluationTime="Report">
+			<dataset kind="category" resetType="Report">
+				<datasetRun uuid="e6296c61-14c8-4d5c-a59b-0d6b1296cd12" subDataset="Dataset3">
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				</datasetRun>
+				<series>
+					<seriesExpression><![CDATA[$F{poblacion_estimada}]]></seriesExpression>
+					<categoryExpression><![CDATA[$F{poblacion_estimada}]]></categoryExpression>
+					<valueExpression><![CDATA[$F{total}]]></valueExpression>
+				</series>
+			</dataset>
+			<plot>
+				<itemLabel/>
+				<seriesColor order="0" color="#205EFA"/>
+				<seriesColor order="1" color="#788BF5"/>
+				<seriesColor order="2" color="#C6EEF7"/>
+				<seriesColor order="3" color="#21FCF9"/>
+				<seriesColor order="4" color="#2CD8DE"/>
+				<seriesColor order="5" color="#58B1F5"/>
+				<seriesColor order="6" color="#62B9CC"/>
+				<seriesColor order="7" color="#082A82"/>
+			</plot>
+		</element>
+		<element kind="staticText" uuid="1d0c6926-c6ae-4a8a-b91c-00255cb6ba77" mode="Opaque" x="0" y="0" width="270" height="20" forecolor="#FCFCFC" backcolor="#192043" fontSize="13.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Estado de conservacion ]]></text>
+		</element>
+		<element kind="staticText" uuid="723524f5-ac15-41f1-90cd-e9f06b787081" mode="Opaque" x="290" y="0" width="270" height="20" forecolor="#FCFCFC" backcolor="#192043" fontSize="13.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Categorias de especies]]></text>
+		</element>
+		<element kind="staticText" uuid="a636064b-a798-4022-9310-a0eac822cac8" mode="Opaque" x="60" y="340" width="440" height="20" forecolor="#FCFCFC" backcolor="#192043" fontSize="13.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Poblacion estimada]]></text>
+		</element>
+	</summary>
+</jasperReport>

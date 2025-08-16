@@ -1,0 +1,202 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="VerUsuarios" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2baa5c57-ccaa-4df7-b9eb-d8dd3cbc843f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Conexion_Gestion_Mar"/>
+	<query language="SQL"><![CDATA[SELECT * FROM usuarios]]></query>
+	<field name="idusuarios" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="idusuarios"/>
+		<property name="com.jaspersoft.studio.field.label" value="idusuarios"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<field name="Dni" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Dni"/>
+		<property name="com.jaspersoft.studio.field.label" value="Dni"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<field name="Nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="Nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<field name="Apellido" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Apellido"/>
+		<property name="com.jaspersoft.studio.field.label" value="Apellido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<field name="Correo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Correo"/>
+		<property name="com.jaspersoft.studio.field.label" value="Correo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<field name="usuario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="usuario"/>
+		<property name="com.jaspersoft.studio.field.label" value="usuario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<field name="Contraseña" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Contraseña"/>
+		<property name="com.jaspersoft.studio.field.label" value="Contraseña"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<field name="Rol" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Rol"/>
+		<property name="com.jaspersoft.studio.field.label" value="Rol"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuarios"/>
+	</field>
+	<group name="idusuarios">
+		<expression><![CDATA[$F{idusuarios}]]></expression>
+	</group>
+	<group name="Dni">
+		<expression><![CDATA[$F{Dni}]]></expression>
+	</group>
+	<group name="Nombre">
+		<expression><![CDATA[$F{Nombre}]]></expression>
+	</group>
+	<group name="Apellido">
+		<expression><![CDATA[$F{Apellido}]]></expression>
+	</group>
+	<group name="Correo">
+		<expression><![CDATA[$F{Correo}]]></expression>
+	</group>
+	<group name="usuario">
+		<expression><![CDATA[$F{usuario}]]></expression>
+	</group>
+	<group name="Contraseña">
+		<expression><![CDATA[$F{Contraseña}]]></expression>
+	</group>
+	<group name="Rol">
+		<expression><![CDATA[$F{Rol}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="141" splitType="Stretch">
+		<element kind="image" uuid="db2aaf77-e7fa-437d-9279-953a1ab54a7a" mode="Opaque" x="0" y="0" width="802" height="130" forecolor="#003366" backcolor="#003366">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/Logo BIO OCEANS.png"]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="26b39151-afab-497f-8da4-e6c172be902f" stretchType="ContainerHeight" x="680" y="10" width="120" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="18.0" bold="true">
+			<text><![CDATA[BIO OCEAN ]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="36f624f2-1730-4ec5-8425-998a5c6b18e2" stretchType="ContainerHeight" x="559" y="40" width="230" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="16.0" bold="true">
+			<text><![CDATA[REGISTRO DE USUARIOS ]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="dc981cd9-31a2-4e08-96ac-51edfe86d97f" stretchType="ContainerHeight" x="632" y="65" width="160" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="13.0" bold="true">
+			<text><![CDATA[Departamento de Biologia Marina ]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="image" uuid="d8d998e0-3b2e-486d-b2cc-f621bab3219f" x="615" y="64" width="16" height="22">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/placeholder.png"]]></expression>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="staticText" uuid="2b888883-f7fb-4a5a-9ea0-0a522c187545" stretchType="ContainerHeight" x="648" y="86" width="142" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="13.0" bold="true">
+			<text><![CDATA[contacto@bioocean.org]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="image" uuid="7d175b38-89bf-4a9d-9b5f-e8a7c77f3bbe" x="631" y="86" width="15" height="22">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/mail.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="00049d00-5539-4f9b-a0a1-5b3e575a8002" stretchType="ContainerHeight" x="690" y="108" width="99" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="11.0" bold="true">
+			<text><![CDATA[www.bioocean.org]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="image" uuid="a045e568-c06d-407d-b4be-ba4ba4f56451" x="670" y="108" width="16" height="17">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/internet.png"]]></expression>
+		</element>
+		<element kind="line" uuid="30d3253d-9791-4a09-a8f3-644880626612" mode="Opaque" x="0" y="140" width="802" height="1" forecolor="#192043" backcolor="#192043">
+			<pen lineWidth="5.0" lineStyle="Double"/>
+		</element>
+	</title>
+	<pageHeader height="19" splitType="Stretch"/>
+	<columnHeader height="30" splitType="Stretch">
+		<element kind="staticText" uuid="30aa994b-8c36-47f5-917e-8b1ac23ee597" mode="Opaque" x="0" y="0" width="50" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="956bc90f-87c4-4515-b9ae-727d788589c3"/>
+		</element>
+		<element kind="staticText" uuid="4f3050bb-f945-4a34-80aa-2d0217f4ec26" mode="Opaque" x="50" y="0" width="130" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Dni]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="664d31fe-618c-4bf3-b87a-b71f4471050a"/>
+		</element>
+		<element kind="staticText" uuid="b6888acf-01b1-437d-9d1b-0b7e0e7474df" mode="Opaque" x="180" y="0" width="100" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Nombre]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cac6df1-3190-45b2-af18-2518b69cc5f7"/>
+		</element>
+		<element kind="staticText" uuid="3f26b9ef-d3a9-4334-8f54-be3904323e18" mode="Opaque" x="732" y="0" width="70" height="30" forecolor="#FCFAFA" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Rol]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f914dded-6ddf-40b5-b0bd-de5c216ff230"/>
+		</element>
+		<element kind="staticText" uuid="b8e365d0-1f53-4e28-b372-3847a66d317e" mode="Opaque" x="643" y="0" width="89" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Contraseña]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b0d54bf1-e84e-4a2f-91d3-20383267fdba"/>
+		</element>
+		<element kind="staticText" uuid="7ede4f1e-115d-4fee-889b-6e436ef8bcb4" mode="Opaque" x="550" y="0" width="93" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Usuario]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d93d1693-fda2-4273-a142-09902cd8a507"/>
+		</element>
+		<element kind="staticText" uuid="75c42265-36c9-4b4d-a05b-5e7a5bc56c35" mode="Opaque" x="390" y="0" width="160" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Correo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92ede1e4-c500-47f8-af1f-260e549ff597"/>
+		</element>
+		<element kind="staticText" uuid="808b5ae8-4210-4e1d-80c2-e1b723acca72" mode="Opaque" x="280" y="0" width="110" height="30" forecolor="#FFFCFC" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Apellido]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2f37a47-3fc9-47a2-9ce2-b5c2a3b134a4"/>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<element kind="textField" uuid="54d26c0a-6ee2-4488-a2b6-879fefaba4c5" x="0" y="0" width="30" height="23">
+				<expression><![CDATA[$F{idusuarios}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="956bc90f-87c4-4515-b9ae-727d788589c3"/>
+			</element>
+			<element kind="textField" uuid="22ddd9f7-21ef-47c9-9d01-ab178590589f" x="50" y="0" width="130" height="23">
+				<expression><![CDATA[$F{Dni}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="664d31fe-618c-4bf3-b87a-b71f4471050a"/>
+			</element>
+			<element kind="textField" uuid="a87d777b-9092-4f56-8d72-83463c0f98a1" x="180" y="0" width="100" height="23">
+				<expression><![CDATA[$F{Nombre}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cac6df1-3190-45b2-af18-2518b69cc5f7"/>
+			</element>
+			<element kind="textField" uuid="822f6b38-0643-4940-9f3d-ba2e44d65846" x="732" y="0" width="68" height="23">
+				<expression><![CDATA[$F{Rol}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f914dded-6ddf-40b5-b0bd-de5c216ff230"/>
+			</element>
+			<element kind="textField" uuid="29605424-4a19-445f-b9bd-39d8b4b7d026" x="643" y="0" width="70" height="23">
+				<expression><![CDATA[$F{Contraseña}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b0d54bf1-e84e-4a2f-91d3-20383267fdba"/>
+			</element>
+			<element kind="textField" uuid="25473ea5-f316-4ca5-8aff-4f960a56de09" x="550" y="0" width="70" height="23">
+				<expression><![CDATA[$F{usuario}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d93d1693-fda2-4273-a142-09902cd8a507"/>
+			</element>
+			<element kind="textField" uuid="e70a5d28-5951-41d0-8255-24dca1004c21" x="390" y="0" width="140" height="23">
+				<expression><![CDATA[$F{Correo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92ede1e4-c500-47f8-af1f-260e549ff597"/>
+			</element>
+			<element kind="textField" uuid="f8e574cc-1505-4fb2-bf52-d15416dd04fb" x="280" y="0" width="90" height="23">
+				<expression><![CDATA[$F{Apellido}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b2f37a47-3fc9-47a2-9ce2-b5c2a3b134a4"/>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<columnFooter splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</columnFooter>
+	<pageFooter splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageFooter>
+	<summary splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</summary>
+</jasperReport>

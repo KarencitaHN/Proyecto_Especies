@@ -1,0 +1,71 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="ReporteEspecies" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="e115bc59-fd0f-446b-a585-04725e27d7f0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Conexion_Gestion_Mar"/>
+	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12.0" bold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12.0"/>
+	<query language="SQL"><![CDATA[SELECT * FROM especies_marinas]]></query>
+	<field name="idespecies_marinas" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="idespecies_marinas"/>
+		<property name="com.jaspersoft.studio.field.label" value="idespecies_marinas"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="nombre_cientifico" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_cientifico"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_cientifico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="nombre_comun" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_comun"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_comun"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="habitat" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="habitat"/>
+		<property name="com.jaspersoft.studio.field.label" value="habitat"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="poblacion_estimada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="poblacion_estimada"/>
+		<property name="com.jaspersoft.studio.field.label" value="poblacion_estimada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="estado_conservacion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado_conservacion"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado_conservacion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<group name="Group1">
+		<expression><![CDATA[$F{idespecies_marinas}]]></expression>
+	</group>
+	<group name="Group2">
+		<expression><![CDATA[$F{nombre_cientifico}]]></expression>
+	</group>
+	<group name="nombre_comun">
+		<expression><![CDATA[$F{nombre_comun}]]></expression>
+	</group>
+	<group name="habitat">
+		<expression><![CDATA[$F{habitat}]]></expression>
+	</group>
+	<group name="poblacion_estimada">
+		<expression><![CDATA[$F{poblacion_estimada}]]></expression>
+	</group>
+	<group name="estado_conservacion">
+		<expression><![CDATA[$F{estado_conservacion}]]></expression>
+	</group>
+	<background height="575" splitType="Stretch">
+		<element kind="image" uuid="2b22ba52-8b1a-4ae3-814a-d82aa867caba" x="-11" y="-190" width="315" height="695">
+			<expression><![CDATA["C:/Users/Alumno/Downloads/Estrella de Mar .jpg"]]></expression>
+		</element>
+	</background>
+	<title height="104" splitType="Stretch">
+		<element kind="staticText" uuid="1dcadd54-7d50-4470-85ed-189e4d910b25" x="0" y="0" width="802" height="67" fontSize="54.0" bold="false" hTextAlign="Right" vTextAlign="Middle" style="Title">
+			<text><![CDATA[Registro de Especies ]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnFooter splitType="Stretch"/>
+	<summary splitType="Stretch"/>
+</jasperReport>

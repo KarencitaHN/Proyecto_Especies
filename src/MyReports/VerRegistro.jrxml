@@ -1,0 +1,201 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="VerRegistro" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a865d2a8-856d-4166-92fb-d63bb6fff0b0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Conexion_Gestion_Mar"/>
+	<query language="SQL"><![CDATA[SELECT * FROM especies_marinas]]></query>
+	<field name="idespecies_marinas" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="idespecies_marinas"/>
+		<property name="com.jaspersoft.studio.field.label" value="idespecies_marinas"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="codigo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigo"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="categoria" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="categoria"/>
+		<property name="com.jaspersoft.studio.field.label" value="categoria"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="nombre_cientifico" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_cientifico"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_cientifico"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="nombre_comun" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_comun"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_comun"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="habitat" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="habitat"/>
+		<property name="com.jaspersoft.studio.field.label" value="habitat"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="poblacion_estimada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="poblacion_estimada"/>
+		<property name="com.jaspersoft.studio.field.label" value="poblacion_estimada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<field name="estado_conservacion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado_conservacion"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado_conservacion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="especies_marinas"/>
+	</field>
+	<group name="idespecies_marinas">
+		<expression><![CDATA[$F{idespecies_marinas}]]></expression>
+	</group>
+	<group name="codigo">
+		<expression><![CDATA[$F{codigo}]]></expression>
+	</group>
+	<group name="categoria">
+		<expression><![CDATA[$F{categoria}]]></expression>
+	</group>
+	<group name="nombre_cientifico">
+		<expression><![CDATA[$F{nombre_cientifico}]]></expression>
+	</group>
+	<group name="nombre_comun">
+		<expression><![CDATA[$F{nombre_comun}]]></expression>
+	</group>
+	<group name="habitat">
+		<expression><![CDATA[$F{habitat}]]></expression>
+	</group>
+	<group name="poblacion_estimada">
+		<expression><![CDATA[$F{poblacion_estimada}]]></expression>
+	</group>
+	<group name="estado_conservacion">
+		<expression><![CDATA[$F{estado_conservacion}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="152" splitType="Stretch">
+		<element kind="image" uuid="1ea3a47e-36a2-4788-8d72-58295bdb218f" mode="Opaque" x="0" y="0" width="802" height="130" forecolor="#003366" backcolor="#003366">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/Logo BIO OCEANS.png"]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="890f49df-8498-4565-845f-26d3bfb4161c" stretchType="ContainerHeight" x="680" y="10" width="120" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="18.0" bold="true">
+			<text><![CDATA[BIO OCEAN ]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="a2501725-61c6-4937-87b8-9197b1295845" stretchType="ContainerHeight" x="360" y="39" width="430" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="16.0" bold="true">
+			<text><![CDATA[REPORTE GENERAL DE ESPECIES REGISTRADAS]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="line" uuid="4ebf55a6-0cb5-4934-9e16-b4ee55a434f1" mode="Opaque" x="0" y="140" width="802" height="1" forecolor="#192043" backcolor="#192043">
+			<pen lineWidth="5.0" lineStyle="Double"/>
+		</element>
+		<element kind="image" uuid="fa865ee4-fe1b-4720-88bc-5df69ff00073" x="615" y="64" width="16" height="22">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/placeholder.png"]]></expression>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		</element>
+		<element kind="staticText" uuid="85d922d1-bf15-42a2-b673-9de33da5f546" stretchType="ContainerHeight" x="632" y="65" width="160" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="13.0" bold="true">
+			<text><![CDATA[Departamento de Biologia Marina ]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="image" uuid="cff28e81-89d7-4868-ac5a-45af05433b18" x="631" y="86" width="15" height="22">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/mail.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="70c1bbb5-ad50-4c4b-a841-7f71bd97fba9" stretchType="ContainerHeight" x="648" y="86" width="142" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="13.0" bold="true">
+			<text><![CDATA[contacto@bioocean.org]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="image" uuid="968d2fd1-435f-422d-9a1a-b33dbe264444" x="670" y="108" width="16" height="17">
+			<expression><![CDATA["C:/Users/Alumno/OneDrive - Universidad Tecnológica de Honduras/Imágenes/Programacion Avanzada Proyecto/internet.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="ba2ceacc-d76d-48af-94a1-0da7b4027964" stretchType="ContainerHeight" x="690" y="108" width="99" height="30" forecolor="#FFFCFC" fontName="Imprint MT Shadow" fontSize="11.0" bold="true">
+			<text><![CDATA[www.bioocean.org]]></text>
+			<box>
+				<pen lineColor="#FFFFFF"/>
+			</box>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="30" splitType="Stretch">
+		<element kind="staticText" uuid="f9202cc2-d20b-4534-81d7-76e719102b78" mode="Opaque" x="0" y="0" width="40" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true" hTextAlign="Justified">
+			<text><![CDATA[ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b309a02-b304-498a-bbff-8e190b684b47"/>
+		</element>
+		<element kind="staticText" uuid="a5e1ed17-7e91-4dfd-add0-c75e3dd94e93" mode="Opaque" x="40" y="0" width="80" height="30" forecolor="#FFFAFA" backcolor="#192043" fontSize="14.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[Codigo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1efb5830-f88c-489c-bc10-53693739092c"/>
+		</element>
+		<element kind="staticText" uuid="5a010029-5fe1-4802-bd3c-b279a9bedba0" mode="Opaque" x="120" y="0" width="120" height="30" forecolor="#FCFAFA" backcolor="#192043" fontSize="14.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[Categoria]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="551c9bac-731c-44e5-81f3-3efd0322ee86"/>
+		</element>
+		<element kind="staticText" uuid="8059868a-4158-4a90-ae6f-54142a161d62" mode="Opaque" x="240" y="0" width="120" height="30" forecolor="#FFFFFF" backcolor="#192043" fontSize="14.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[Nombre Cient.]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2089b1c0-d78e-4148-80a8-d69e5af89e20"/>
+		</element>
+		<element kind="staticText" uuid="4e0095a7-2078-4cc4-8720-d7002a990c99" mode="Opaque" x="360" y="0" width="120" height="30" forecolor="#FCFCFC" backcolor="#192043" fontSize="14.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[Nombre Comun]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa5ac61f-5caa-4622-949b-79c98a7fc8c4"/>
+		</element>
+		<element kind="staticText" uuid="e3a0c721-918d-4576-858c-db739d94462b" mode="Opaque" x="480" y="0" width="120" height="30" forecolor="#FCF7F7" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Habitat]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f988df1b-b9a0-47b1-94c4-0326b28831df"/>
+		</element>
+		<element kind="staticText" uuid="43e40cd0-beb3-45c6-a3cf-057ba709b98c" mode="Opaque" x="600" y="0" width="102" height="30" forecolor="#FAF7F7" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Poblacion]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be3520df-2d21-4216-a70e-1edd3628bee5"/>
+		</element>
+		<element kind="staticText" uuid="e5ee18bc-13ff-4872-a095-ec23847f9d8a" mode="Opaque" x="702" y="0" width="100" height="30" forecolor="#FFFAFA" backcolor="#192043" fontSize="14.0" bold="true">
+			<text><![CDATA[Estado Conv.]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66595367-f1de-4ba6-9e84-de3263b39fe1"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<element kind="textField" uuid="ba0629dc-baca-433b-b878-c3136a46b96e" x="0" y="0" width="20" height="20">
+				<expression><![CDATA[$F{idespecies_marinas}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b309a02-b304-498a-bbff-8e190b684b47"/>
+			</element>
+			<element kind="textField" uuid="cdbb36b1-2cf0-4c13-8abf-b578e4709a8e" x="40" y="0" width="60" height="20">
+				<expression><![CDATA[$F{codigo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1efb5830-f88c-489c-bc10-53693739092c"/>
+			</element>
+			<element kind="textField" uuid="4b7acd52-94f1-4245-b8cf-f5b1b7de6708" x="120" y="0" width="100" height="20">
+				<expression><![CDATA[$F{categoria}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="551c9bac-731c-44e5-81f3-3efd0322ee86"/>
+			</element>
+			<element kind="textField" uuid="435233c7-9beb-43fb-b67d-743589e18bf2" x="240" y="0" width="100" height="20">
+				<expression><![CDATA[$F{nombre_cientifico}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2089b1c0-d78e-4148-80a8-d69e5af89e20"/>
+			</element>
+			<element kind="textField" uuid="cecd7a5e-a14b-419b-8b12-57ca12081b4a" x="360" y="0" width="100" height="20">
+				<expression><![CDATA[$F{nombre_comun}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa5ac61f-5caa-4622-949b-79c98a7fc8c4"/>
+			</element>
+			<element kind="textField" uuid="1823ef5c-2002-4147-b4ee-7da6acc669be" x="480" y="0" width="100" height="20">
+				<expression><![CDATA[$F{habitat}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f988df1b-b9a0-47b1-94c4-0326b28831df"/>
+			</element>
+			<element kind="textField" uuid="342cb53b-78f2-471a-8a0a-3e8638532ad9" x="600" y="0" width="80" height="20">
+				<expression><![CDATA[$F{poblacion_estimada}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be3520df-2d21-4216-a70e-1edd3628bee5"/>
+			</element>
+			<element kind="textField" uuid="20cc9671-5ebb-4ff3-aa15-81b9eda2cff9" x="700" y="0" width="100" height="20">
+				<expression><![CDATA[$F{estado_conservacion}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66595367-f1de-4ba6-9e84-de3263b39fe1"/>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<columnFooter splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</columnFooter>
+	<pageFooter splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageFooter>
+	<summary splitType="Stretch">
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</summary>
+</jasperReport>
